@@ -2,14 +2,22 @@
 
 public class TableUtilities {
     public static String getSmallMultiplicationTable() {
-        return null;
+        return getMultiplicationTable(5);
     }
 
     public static String getLargeMultiplicationTable() {
-        return null;
+        return getMultiplicationTable(10);
     }
 
     public static String getMultiplicationTable(int tableSize) {
-        return null;
+String multi ="";
+        for(int i = 1; i <= tableSize; i++){
+            for(int j = 1; j <= tableSize; j++){
+                    multi = multi + String.format("%3d |", i*j);
+                
+            }
+           multi = multi + "\n";
+        }
+        return multi;
     }
 }

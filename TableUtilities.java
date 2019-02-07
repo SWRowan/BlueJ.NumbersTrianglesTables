@@ -13,10 +13,10 @@ public class TableUtilities {
 String multi ="";
         for(int i = 1; i <= tableSize; i++){
             for(int j = 1; j <= tableSize; j++){
-                    multi = multi + String.format("%3d |", i*j);
+                    multi += String.format("%3d |", i*j);
                 
             }
-           multi = multi + "\n";
+           multi += "\n";
         }
         return multi;
     }

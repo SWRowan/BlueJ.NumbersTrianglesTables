@@ -5,7 +5,7 @@ public class TriangleUtilities {
     public static String getRow(int numberOfStars) {
         String str = "";
         for(int x = 0; x < numberOfStars; x++){  
-                str = str + "*";
+                str += "*";
         }
         return str;
     }
@@ -15,10 +15,10 @@ public class TriangleUtilities {
         for(int i = 1; i <= numberOfRows; i++){
             for(int j = 1; j <= i; j++){
                 if(j <= i){
-                    star = star + "*";
+                    star += "*";
                 }
             }
-            star = star + "\n";
+            star += "\n";
         }
      return star;
 }
@@ -28,10 +28,10 @@ public class TriangleUtilities {
         for(int i = 1; i <= 4; i++){
             for(int j = 1; j <= i; j++){
                 if(j <= i){
-                    star = star + "*";
+                    star += "*";
                 }
             }
-            star = star + "\n";
+            star += "\n";
         }
      return star;
     }
@@ -41,10 +41,10 @@ public class TriangleUtilities {
         for(int i = 1; i <= 9; i++){
             for(int j = 1; j <= i; j++){
                 if(j <= i){
-                    star = star + "*";
+                    star += "*";
                 }
             }
-            star = star + "\n";
+            star += "\n";
         }
      return star;
     }
